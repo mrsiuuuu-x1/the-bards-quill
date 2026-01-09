@@ -18,7 +18,7 @@ Using AI turned this from an impossible task into a fun learning session. I now 
 
 ## 3. The Tech Stack 
 * **Manifest V3:** To tell the browser "I am an extension."
-* **JavaScript:** For the translation logic (regex and string replacement).
+* **JavaScript:** For the translation logic.
 * **CSS:** To make the button look like an ancient leather scroll.
 
 ## 4. The "Aha!" Moment (and the Bug) 
@@ -35,6 +35,7 @@ runeButton.addEventListener("mousedown", (event) => {
     event.preventDefault(); 
     // ... rest of code
 });
+```
 
 ## 5. What's Next? 🚀
 I might add a "Pirate Mode" or a "Gen Z Slang" mode next. But for now, I'm going to go annoy my friends with Old English texts.

@@ -1,15 +1,15 @@
-/* This is the style for the floating button */
+/*style for the floating button */
 #bards-quill-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 9999; /* This forces the button to sit on top of other websites */
+    z-index: 9999; /* This forces the button to sit on top of other websites(tip) */
     
-    /* Design of the button */
-    background-color: #4a2c2c; /* Dark leather brown */
-    color: #ffd700; /* Gold text */
-    border: 2px solid #ffd700; /* Gold border */
-    border-radius: 50%; /* Makes it a perfect circle */
+    /* Designing button(NO AI I built it on my own) */
+    background-color: #4a2c2c;
+    color: #ffd700;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
     
     /* Size */
     width: 60px;
@@ -22,7 +22,7 @@
     transition: transform 0.2s; /* Smooth animation */
 }
 
-/* When you hover over the button */
+/* When hover over the button */
 #bards-quill-btn:hover {
     transform: scale(1.1) rotate(10deg); /* It grows and tilts slightly */
     background-color: #5c3a3a; /* Lighter brown */

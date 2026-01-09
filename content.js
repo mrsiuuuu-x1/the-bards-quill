@@ -1,4 +1,4 @@
-// 1. THE DICTIONARY (Edit this list to add more funny words!)
+// 1. THE DICTIONARY 
 const dictionary = {
     "hello": "hark",
     "hi": "greetings, traveler",
@@ -23,38 +23,37 @@ const dictionary = {
     "cringe": "most foul"
 };
 
-// 2. THE TRANSLATION LOGIC (The machine that swaps the words)
+// 2. THE TRANSLATION LOGIC 
 function shakespeareify(text) {
     let newText = text;
     
     // Loop through every word in our dictionary
     for (const [key, value] of Object.entries(dictionary)) {
-        // This weird line ensures we match the whole word, not just parts of it
+        // Ensuring we match the whole work
         const regex = new RegExp(`\\b${key}\\b`, "gi"); 
         newText = newText.replace(regex, value);
     }
     
-    // Add a dramatic signature at the end
+    // Adding a dramatic signature at the end
     return newText + "\n\n— Written by the Quill of Destiny";
 }
 
-// 3. CREATE THE BUTTON ON THE SCREEN
+// 3. CREATING BUTTON ON THE SCREEN
 const runeButton = document.createElement("button");
 runeButton.innerText = "📜"; // The scroll icon
 runeButton.id = "bards-quill-btn"; // MUST match the ID in styles.css
 document.body.appendChild(runeButton);
 
-// 4. LISTEN FOR CLICKS (Fixed to prevent focus stealing)
+// 4. LISTEN FOR CLICKS
 runeButton.addEventListener("mousedown", (event) => {
-    // THIS IS THE MAGIC FIX:
+    // BUG FIX(Used AI can't figure out on my own):
     event.preventDefault(); // Stops the button from stealing focus from the text box!
     
-    // Find where the user is currently typing
     const activeElement = document.activeElement;
 
     console.log("Active Element is:", activeElement.tagName); // This helps us debug if needed
 
-    // Check if it's a text box
+    // Checking if it's a text box
     if (activeElement.tagName === "TEXTAREA" || activeElement.tagName === "INPUT") {
         activeElement.value = shakespeareify(activeElement.value);
         
