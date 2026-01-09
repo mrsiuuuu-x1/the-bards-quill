@@ -36,7 +36,8 @@ runeButton.addEventListener("mousedown", (event) => {
     // ... rest of code
 });
 
-## 5. What's Next?
+## 5. What's Next? 🚀
 I might add a "Pirate Mode" or a "Gen Z Slang" mode next. But for now, I'm going to go annoy my friends with Old English texts.
 
-Built for Hack Club Flavortown 2026.
+---
+*Built for Hack Club Flavortown 2026.*
