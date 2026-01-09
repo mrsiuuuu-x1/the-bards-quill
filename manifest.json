@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "The Bard's Quill",
+  "version": "1.0",
+  "description": "Transforms boring emails into dramatic Shakespearean soliloquies.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  }
+}
