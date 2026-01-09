@@ -20,7 +20,8 @@ const dictionary = {
     "lol": "I chuckle heartily",
     "bruh": "brother mine",
     "no cap": "upon my honor",
-    "cringe": "most foul"
+    "cringe": "most foul",
+    "regards":"(Be thou healthy"
 };
 
 // 2. THE TRANSLATION LOGIC 
